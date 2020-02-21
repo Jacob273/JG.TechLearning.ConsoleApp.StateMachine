@@ -1,0 +1,18 @@
+transitions (plantuml)
+
+@startuml
+title ConsoleApp.StateMachine
+
+[*] --> Idle : Initialize
+
+Idle --> InitializedState : Initialize
+InitializedState --> ElementPlacement: Start
+ElementPlacement--> Welding : Run
+
+Idle -> Error
+InitializedState --> Error
+ElementPlacement--> Error
+Welding --> Error
+
+Error -> Idle : Reset?
+@enduml
