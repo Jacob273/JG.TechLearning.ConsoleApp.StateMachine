@@ -12,5 +12,14 @@ namespace JG.TechLearning.ConsoleApp.StateMachine.ConcreteStates
         {
             this.stateMachine = stateMachine;
         }
+
+        public override void OnComplete()
+        {
+            //state setting
+            stateMachine.SetState(StateName.IdleState);
+
+            //logic execution
+            Debug.WriteLine("Going idle...");
+        }
     }
 }

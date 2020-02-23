@@ -19,7 +19,7 @@ namespace JG.TechLearning.ConsoleApp.StateMachine.ConcreteStates
             stateMachine.SetState(StateName.WeldingState);
 
             //logic execution
-            Debug.WriteLine("Element has been welded....please perform tests.");
+            Debug.WriteLine("Welding...");
         }
     }
 }

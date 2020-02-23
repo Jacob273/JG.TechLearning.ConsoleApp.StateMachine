@@ -17,7 +17,7 @@ namespace JG.TechLearning.ConsoleApp.StateMachine.ConcreteStates
             stateMachine.SetState(StateName.ElementPlacementState);
 
             //logic execution
-            Debug.WriteLine("Initialization has been finished....");
+            Debug.WriteLine("Placing the element...");
         }
     }
 
