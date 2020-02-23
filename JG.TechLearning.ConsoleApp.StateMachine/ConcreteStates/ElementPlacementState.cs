@@ -13,7 +13,7 @@ namespace JG.TechLearning.ConsoleApp.StateMachine.ConcreteStates
             this.stateMachine = stateMachine;
         }
 
-        public override void OnReady()
+        public override void OnRun()
         {
             //state setting
             stateMachine.SetState(StateName.WeldingState);

@@ -18,16 +18,16 @@ namespace JG.TechLearning.ConsoleApp.StateMachine
             sm.Initialize();
             Console.WriteLine(sm.GetCurrentState());
 
-
-
             //3# Starting the machine cause: >>>>>Initial state GOING ElementPlacement state
             sm.Start();
             Console.WriteLine(sm.GetCurrentState());
 
-
-
             //4# Ready has been clicked cause: >>>>>ElementPlacement GOING Welding
-            sm.Ready();
+            sm.Run();
+            Console.WriteLine(sm.GetCurrentState());
+
+            //4# Welding completed cause: >>>>> Welding GOING Idle
+            sm.Complete();
             Console.WriteLine(sm.GetCurrentState());
         }
     }
